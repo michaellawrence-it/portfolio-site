@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Lawrence - IT Systems & Automation Engineer</title>
+<meta name="description" content="IT Systems & Automation Engineer - M365, Entra ID, Active Directory, Windows Server, PowerShell, Power Platform, Docker. Sole IT for a 100+ employee HIPAA-regulated org.">
+<meta property="og:title" content="Michael Lawrence - IT Systems & Automation Engineer">
+<meta property="og:description" content="I run IT solo for a 100+ employee healthcare org - and I automate everything that gets done twice.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f766e'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EML%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0b1120; --panel:#101a30; --panel2:#0d1526; --line:#1e2c4a;
+    --text:#e2e8f0; --muted:#8ea0bd; --accent:#2dd4bf; --accent2:#0f766e;
+    --max:1060px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  header.hero{padding:88px 0 56px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 500px at 70% -10%, rgba(45,212,191,.08), transparent)}
+  .kicker{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+  h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.15;margin:.35em 0 .3em}
+  .tag{color:var(--muted);font-size:1.12rem;max-width:640px}
+  .links{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid var(--line);color:var(--text);font-weight:600;font-size:.95rem;transition:.15s}
+  .btn:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+  .btn.primary{background:var(--accent2);border-color:var(--accent2);color:#fff}
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.6rem;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:36px;max-width:640px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .stat b{display:block;font-size:1.9rem;color:var(--accent);line-height:1.2}
+  .stat span{color:var(--muted);font-size:.92rem}
+  .case{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px;margin-bottom:26px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+  .case:nth-child(even){grid-template-columns:.9fr 1.1fr}
+  .case:nth-child(even) .diagram{order:-1}
+  .case h3{font-size:1.25rem;margin-bottom:10px}
+  .case .prob{color:var(--muted);font-size:.97rem;margin-bottom:12px}
+  .case ul{list-style:none;margin:0 0 14px}
+  .case li{padding-left:22px;position:relative;margin-bottom:7px;font-size:.97rem}
+  .case li::before{content:"▸";color:var(--accent);position:absolute;left:0}
+  .result{display:inline-block;background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.35);color:var(--accent);border-radius:999px;padding:4px 14px;font-size:.88rem;font-weight:600;margin-bottom:12px}
+  .repo{font-size:.9rem}
+  .diagram{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .diagram svg{width:100%;height:auto;display:block}
+  .dg-box{fill:#132038;stroke:#2a3d63;rx:8}
+  .dg-hot{fill:#0f2e2b;stroke:#2dd4bf}
+  .dg-txt{fill:#dbe5f3;font:600 13px ui-sans-serif,system-ui,sans-serif}
+  .dg-sub{fill:#8ea0bd;font:11px ui-sans-serif,system-ui,sans-serif}
+  .dg-arrow{stroke:#3f588b;stroke-width:1.6;marker-end:url(#arr)}
+  .stack{display:flex;flex-wrap:wrap;gap:10px}
+  .chip{background:var(--panel);border:1px solid var(--line);padding:7px 15px;border-radius:999px;font-size:.9rem;color:var(--text)}
+  .about p{max-width:680px;color:var(--muted);margin-bottom:14px}
+  .about strong{color:var(--text)}
+  footer{padding:44px 0;color:var(--muted);font-size:.9rem}
+  footer .links{margin-top:0}
+  @media(max-width:800px){
+    .case,.case:nth-child(even){grid-template-columns:1fr}
+    .case:nth-child(even) .diagram{order:0}
+    header.hero{padding:60px 0 44px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Michael Lawrence</div>
+    <h1>IT Systems &amp; Automation Engineer</h1>
+    <p class="tag">I run IT solo for a 100+ employee HIPAA-regulated healthcare organization - and I automate everything that gets done twice. M365 · Entra ID · Windows Server · PowerShell · Power Platform · Docker.</p>
+    <div class="links">
+      <a class="btn primary" href="resume.pdf">Résumé (PDF)</a>
+      <a class="btn" href="https://github.com/michaellawrence-it">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/michael-lawrence-9a98521a2">LinkedIn</a>
+      <a class="btn" href="mailto:michaelawrence23@gmail.com">Email</a>
+    </div>
+  </div>
+</header>
+
+<section id="stats">
+  <div class="wrap">
+    <h2>The short version</h2>
+    <p class="sub">Numbers first - the case studies below show how.</p>
+    <div class="stats">
+      <div class="stat"><b>100+</b><span>employees supported, solo, across multiple locations</span></div>
+      <div class="stat"><b>65 → 120</b><span>headcount growth absorbed with zero added IT staff</span></div>
+      <div class="stat"><b>HIPAA</b><span>regulated environment - GPO, MFA, least privilege by design</span></div>
+      <div class="stat"><b>~45 min</b><span>zero-touch machine builds, down from half a day of manual setup</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Case studies</h2>
+    <p class="sub">Real systems, running in production. Sanitized source and full write-ups on GitHub.</p>
+
+    <div class="case">
+      <div>
+        <span class="result">Onboarding errors eliminated</span>
+        <h3>Identity automation: attributes in, access out</h3>
+        <p class="prob">Manual account creation and hand-managed security groups don't survive 85% headcount growth - every typo became a day-one access problem.</p>
+        <ul>
+          <li>One PowerShell command creates the account, stamps HR attributes, provisions the mailbox</li>
+          <li>Entra ID dynamic membership rules derive <em>every</em> security group from those attributes</li>
+          <li>Transfers are one attribute edit; offboarding drops all access instantly</li>
+        </ul>
+        <span class="repo">→ <a href="https://github.com/michaellawrence-it/ad-onboarding-automation">ad-onboarding-automation</a> · <a href="https://github.com/michaellawrence-it/entra-dynamic-groups">entra-dynamic-groups</a></span>
+      </div>
+      <div class="diagram"><svg viewBox="0 0 440 200" role="img" aria-label="Provisioning flow diagram">
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3f588b"/></marker></defs>
+        <rect class="dg-box" x="10" y="20" width="130" height="52"/><text class="dg-txt" x="75" y="42" text-anchor="middle">HR intake</text><text class="dg-sub" x="75" y="60" text-anchor="middle">name · dept · role</text>
+        <line class="dg-arrow" x1="140" y1="46" x2="180" y2="46"/>
+        <rect class="dg-box dg-hot" x="182" y="20" width="130" height="52"/><text class="dg-txt" x="247" y="42" text-anchor="middle">New-Employee.ps1</text><text class="dg-sub" x="247" y="60" text-anchor="middle">account + attributes</text>
+        <line class="dg-arrow" x1="247" y1="72" x2="247" y2="108"/>
+        <rect class="dg-box" x="160" y="110" width="174" height="46"/><text class="dg-txt" x="247" y="130" text-anchor="middle">Dynamic group rules</text><text class="dg-sub" x="247" y="146" text-anchor="middle">dept / role / location</text>
+        <line class="dg-arrow" x1="247" y1="156" x2="247" y2="178"/>
+        <text class="dg-sub" x="247" y="192" text-anchor="middle">SharePoint · shares · apps · licenses</text>
+      </svg></div>
+    </div>
+
+    <div class="case">
+      <div>
+        <span class="result">Evaluations run themselves</span>
+        <h3>Power Platform: employee evaluation system</h3>
+        <p class="prob">Annual evaluations lived on paper and memory - missed anniversaries, wrong forms, no audit trail.</p>
+        <ul>
+          <li>Model-driven Power App on Dataverse; anniversary flows key off <code>employeeHireDate</code> in Entra</li>
+          <li>Role-based evaluation tracks driven by a mapping table HR edits - config as data, not code</li>
+          <li>Send / first-open / completion timestamps on every record; PDF export to HR</li>
+          <li>Packaged with environment variables so the whole solution redeploys to a new tenant from a settings file</li>
+        </ul>
+        <span class="repo">→ <a href="https://github.com/michaellawrence-it/powerapps-employee-evaluations">powerapps-employee-evaluations</a></span>
+      </div>
+      <div class="diagram"><svg viewBox="0 0 440 200" role="img" aria-label="Evaluation system diagram">
+        <rect class="dg-box" x="10" y="16" width="128" height="48"/><text class="dg-txt" x="74" y="36" text-anchor="middle">Entra ID</text><text class="dg-sub" x="74" y="53" text-anchor="middle">employeeHireDate</text>
+        <line class="dg-arrow" x1="138" y1="40" x2="176" y2="40"/>
+        <rect class="dg-box" x="178" y="16" width="128" height="48"/><text class="dg-txt" x="242" y="36" text-anchor="middle">Daily flow</text><text class="dg-sub" x="242" y="53" text-anchor="middle">anniversary scan</text>
+        <line class="dg-arrow" x1="306" y1="40" x2="344" y2="40"/>
+        <rect class="dg-box dg-hot" x="346" y="16" width="84" height="48"/><text class="dg-txt" x="388" y="36" text-anchor="middle">Dataverse</text><text class="dg-sub" x="388" y="53" text-anchor="middle">eval records</text>
+        <line class="dg-arrow" x1="388" y1="64" x2="388" y2="96"/>
+        <rect class="dg-box" x="240" y="98" width="190" height="44"/><text class="dg-txt" x="335" y="117" text-anchor="middle">Model-driven app</text><text class="dg-sub" x="335" y="133" text-anchor="middle">role-scoped forms</text>
+        <line class="dg-arrow" x1="335" y1="142" x2="335" y2="170"/>
+        <text class="dg-sub" x="335" y="186" text-anchor="middle">notifications · escalations · PDF → HR</text>
+        <text class="dg-sub" x="90" y="120">audit trail:</text>
+        <text class="dg-sub" x="90" y="138">sent · opened ·</text>
+        <text class="dg-sub" x="90" y="156">completed</text>
+      </svg></div>
+    </div>
+
+    <div class="case">
+      <div>
+        <span class="result">A staging environment that didn't exist</span>
+        <h3>Hyper-V lab: a Server 2025 domain that mirrors production</h3>
+        <p class="prob">There's no test environment at work, and "try it in production" isn't a plan. So I built one - 5 VMs on a host I assembled myself (Ryzen 7 7700X, 32 GB DDR5).</p>
+        <ul>
+          <li><strong>Two virtual switches on separate NICs</strong> - one for internet-facing VMs, one for an isolated lab segment, so the lab's DNS and PXE/DHCP can never collide with the home network</li>
+          <li>Role-separated: domain controller (AD DS / DNS / DHCP), print + database + directory-sync server, RDS host, MDT imaging server, and a domain-joined Windows 11 client to verify against</li>
+          <li>RemoteApp publishing the clinical EMR over a certificate issued by an internal CA - no per-workstation client installs, plus a fallback access path</li>
+          <li>Checkpoints throughout, so a change can be applied, observed, and rolled back in seconds</li>
+          <li>Catches GPO scoping errors, imaging task-sequence failures, and print-driver behavior <em>before</em> they reach real users</li>
+        </ul>
+        <span class="repo">→ <a href="https://github.com/michaellawrence-it/hyperv-ad-lab">hyperv-ad-lab</a></span>
+      </div>
+      <div class="diagram"><svg viewBox="0 0 440 220" role="img" aria-label="Hyper-V lab network diagram">
+        <rect class="dg-box" x="10" y="14" width="104" height="40"/><text class="dg-txt" x="62" y="32" text-anchor="middle">Home gateway</text><text class="dg-sub" x="62" y="47" text-anchor="middle">internet</text>
+        <line class="dg-arrow" x1="114" y1="34" x2="150" y2="34"/>
+        <rect class="dg-box" x="152" y="14" width="128" height="40"/><text class="dg-txt" x="216" y="32" text-anchor="middle">WAN-Switch</text><text class="dg-sub" x="216" y="47" text-anchor="middle">patching / updates</text>
+        <rect class="dg-box dg-hot" x="152" y="66" width="128" height="44"/><text class="dg-txt" x="216" y="85" text-anchor="middle">LAN-Switch</text><text class="dg-sub" x="216" y="101" text-anchor="middle">isolated · DNS · PXE</text>
+        <line class="dg-arrow" x1="216" y1="110" x2="216" y2="136"/>
+        <rect class="dg-box" x="10" y="138" width="132" height="46"/><text class="dg-txt" x="76" y="157" text-anchor="middle">DC - Server 2025</text><text class="dg-sub" x="76" y="173" text-anchor="middle">AD DS · DNS · DHCP</text>
+        <rect class="dg-box" x="150" y="138" width="122" height="46"/><text class="dg-txt" x="211" y="157" text-anchor="middle">Print / DB / Sync</text><text class="dg-sub" x="211" y="173" text-anchor="middle">hybrid identity</text>
+        <rect class="dg-box" x="280" y="138" width="150" height="46"/><text class="dg-txt" x="355" y="157" text-anchor="middle">RDS - RemoteApp</text><text class="dg-sub" x="355" y="173" text-anchor="middle">internal CA cert</text>
+        <line class="dg-arrow" x1="216" y1="136" x2="76" y2="136"/><line class="dg-arrow" x1="216" y1="136" x2="355" y2="136"/>
+        <text class="dg-sub" x="220" y="205" text-anchor="middle">5 VMs · self-built host · mirrors production OU structure</text>
+      </svg></div>
+    </div>
+
+    <div class="case">
+      <div>
+        <span class="result">Recovered from real disk failure</span>
+        <h3>Homelab: self-healing media infrastructure</h3>
+        <p class="prob">A multi-container Docker platform serving Plex and Jellyfin across 13 drives. Then Windows dynamic disks failed and drive letters reshuffled under the whole stack.</p>
+        <ul>
+          <li>Diagnosed it as a pointer problem, not data loss: the large majority of 200+ dead library entries recovered with zero data movement</li>
+          <li>Edited the Plex library DB directly when the API silently no-op'd; re-mounted and re-rooted every service</li>
+          <li>Health check every 30 min now auto-restarts stopped containers and watches drive mounts, space, and server reachability</li>
+          <li>Dedup tooling freed ~379 GB, with runtime-delta guards so alternate cuts never get deleted as "duplicates"</li>
+        </ul>
+        <span class="repo">→ <a href="https://github.com/michaellawrence-it/homelab-media-stack">homelab-media-stack</a> (incl. the full disaster-recovery write-up)</span>
+      </div>
+      <div class="diagram"><svg viewBox="0 0 440 210" role="img" aria-label="Media stack diagram">
+        <rect class="dg-box" x="10" y="10" width="150" height="42"/><text class="dg-txt" x="85" y="28" text-anchor="middle">Docker host</text><text class="dg-sub" x="85" y="44" text-anchor="middle">one concern per container</text>
+        <line class="dg-arrow" x1="85" y1="52" x2="85" y2="84"/>
+        <rect class="dg-box" x="10" y="86" width="150" height="46"/><text class="dg-txt" x="85" y="105" text-anchor="middle">Support services</text><text class="dg-sub" x="85" y="121" text-anchor="middle">stats · requests · live TV</text>
+        <line class="dg-arrow" x1="85" y1="132" x2="85" y2="160"/>
+        <rect class="dg-box" x="10" y="162" width="200" height="40"/><text class="dg-txt" x="110" y="180" text-anchor="middle">13 NTFS drives</text><text class="dg-sub" x="110" y="196" text-anchor="middle">per-drive mounts</text>
+        <rect class="dg-box" x="230" y="162" width="200" height="40"/><text class="dg-txt" x="330" y="180" text-anchor="middle">Plex · Jellyfin</text><text class="dg-sub" x="330" y="196" text-anchor="middle">tunnel-only remote access</text>
+        <line class="dg-arrow" x1="210" y1="182" x2="228" y2="182"/>
+        <rect class="dg-box dg-hot" x="230" y="10" width="200" height="122"/><text class="dg-txt" x="330" y="38" text-anchor="middle">Health check · 30 min</text><text class="dg-sub" x="330" y="62" text-anchor="middle">auto-restart stopped containers</text><text class="dg-sub" x="330" y="82" text-anchor="middle">per-drive space thresholds</text><text class="dg-sub" x="330" y="102" text-anchor="middle">server reachability</text><text class="dg-sub" x="330" y="122" text-anchor="middle">rolling log + state JSON</text>
+      </svg></div>
+    </div>
+
+    <div class="case">
+      <div>
+        <span class="result">Security awareness, measured</span>
+        <h3>In-house phishing simulation program</h3>
+        <p class="prob">Awareness training needs evidence, and commercial phishing-sim platforms are overkill for a 100-person org.</p>
+        <ul>
+          <li>Power Automate flows randomly target rolling cohorts with tracked simulation emails</li>
+          <li>Clicks <em>and</em> reports-to-IT logged to SharePoint - report rate is the culture metric</li>
+          <li>Department rollups for leadership; individual results drive follow-up training</li>
+          <li>Zero licensing cost - built entirely on tooling the org already owned</li>
+        </ul>
+        <span class="repo">→ <a href="https://github.com/michaellawrence-it/powerautomate-phishing-sim">powerautomate-phishing-sim</a></span>
+      </div>
+      <div class="diagram"><svg viewBox="0 0 440 190" role="img" aria-label="Phishing simulation flow">
+        <rect class="dg-box" x="10" y="20" width="126" height="44"/><text class="dg-txt" x="73" y="39" text-anchor="middle">Scheduled flow</text><text class="dg-sub" x="73" y="55" text-anchor="middle">campaign kickoff</text>
+        <line class="dg-arrow" x1="136" y1="42" x2="174" y2="42"/>
+        <rect class="dg-box" x="176" y="20" width="126" height="44"/><text class="dg-txt" x="239" y="39" text-anchor="middle">Random targets</text><text class="dg-sub" x="239" y="55" text-anchor="middle">excl. recent cohorts</text>
+        <line class="dg-arrow" x1="302" y1="42" x2="340" y2="42"/>
+        <rect class="dg-box" x="342" y="20" width="88" height="44"/><text class="dg-txt" x="386" y="39" text-anchor="middle">Lure email</text><text class="dg-sub" x="386" y="55" text-anchor="middle">tracked link</text>
+        <line class="dg-arrow" x1="386" y1="64" x2="386" y2="94"/><line class="dg-arrow" x1="239" y1="64" x2="239" y2="94"/>
+        <rect class="dg-box dg-hot" x="150" y="96" width="280" height="44"/><text class="dg-txt" x="290" y="115" text-anchor="middle">SharePoint campaign log</text><text class="dg-sub" x="290" y="131" text-anchor="middle">click rate ↓ · report rate ↑</text>
+        <line class="dg-arrow" x1="290" y1="140" x2="290" y2="164"/>
+        <text class="dg-sub" x="290" y="180" text-anchor="middle">leadership dashboard · targeted training</text>
+      </svg></div>
+    </div>
+
+  </div>
+</section>
+
+<section id="stack-sec">
+  <div class="wrap">
+    <h2>Stack</h2>
+    <p class="sub">Daily drivers, in production.</p>
+    <div class="stack">
+      <span class="chip">Microsoft 365</span><span class="chip">Entra ID</span><span class="chip">Active Directory</span>
+      <span class="chip">Exchange Online</span><span class="chip">Windows Server</span><span class="chip">Hyper-V</span>
+      <span class="chip">Intune</span><span class="chip">PowerShell</span><span class="chip">Power Apps</span>
+      <span class="chip">Power Automate</span><span class="chip">Dataverse</span><span class="chip">MDT</span>
+      <span class="chip">GPO</span><span class="chip">SharePoint</span><span class="chip">Docker</span>
+      <span class="chip">RDS / RemoteApp</span><span class="chip">AD Certificate Services</span><span class="chip">PXE / WDS</span>
+      <span class="chip">n8n</span><span class="chip">TCP/IP · DNS · DHCP · VPN</span><span class="chip">Duo MFA</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I'm the sole IT operation for a HIPAA-regulated healthcare organization in New Jersey - escalation support, identity, infrastructure, security, and everything between, across multiple locations. The through-line in my work: <strong>if a process gets done twice, it gets automated</strong> - and the automation gets documented, monitored, and made repeatable.</p>
+    <p>B.A. in Information Technology &amp; Informatics, Rutgers University. Rutgers Cybersecurity Boot Camp (300 hrs), Security Pro certified. <strong>Currently studying for the CCNA.</strong></p>
+    <p>Off hours I run the labs above on hardware I built myself, write n8n pipelines, and keep a Letterboxd watchlist longer than I will ever finish.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a class="btn" href="mailto:michaelawrence23@gmail.com">michaelawrence23@gmail.com</a>
+      <a class="btn" href="https://github.com/michaellawrence-it">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/michael-lawrence-9a98521a2">LinkedIn</a>
+    </div>
+    <p style="margin-top:18px">© 2026 Michael Lawrence · Morristown / Hoboken, NJ area</p>
+  </div>
+</footer>
+
+</body>
+</html>
