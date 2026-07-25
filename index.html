@@ -136,8 +136,9 @@
           <li>Role-based evaluation tracks driven by a mapping table HR edits - config as data, not code</li>
           <li>Send / first-open / completion timestamps on every record; PDF export to HR</li>
           <li>Packaged with environment variables so the whole solution redeploys to a new tenant from a settings file</li>
+          <li>Promoted to production through a staged Dev → Sandbox → Production cutover with a validated rollback path</li>
         </ul>
-        <span class="repo">→ <a href="https://github.com/michaellawrence-it/powerapps-employee-evaluations">powerapps-employee-evaluations</a></span>
+        <span class="repo">→ <a href="https://github.com/michaellawrence-it/powerapps-employee-evaluations">powerapps-employee-evaluations</a> · <a href="https://github.com/michaellawrence-it/powerplatform-alm">powerplatform-alm</a></span>
       </div>
       <div class="diagram"><svg viewBox="0 0 440 200" role="img" aria-label="Evaluation system diagram">
         <rect class="dg-box" x="10" y="16" width="128" height="48"/><text class="dg-txt" x="74" y="36" text-anchor="middle">Entra ID</text><text class="dg-sub" x="74" y="53" text-anchor="middle">employeeHireDate</text>
@@ -234,6 +235,31 @@
       </svg></div>
     </div>
 
+    <div class="case">
+      <div>
+        <span class="result">Founder · in staging ahead of production</span>
+        <h3>AutomateComply: compliance automation as a product</h3>
+        <p class="prob">Small businesses on Microsoft 365 need the same HR and security-compliance workflows a big company has, without a big company's IT team. So I built the systems I run at work into something reproducible they can drop into their own tenant.</p>
+        <ul>
+          <li>Reusable Power Automate flows and Power Apps: phishing-awareness training, performance reviews, time-off and overtime approvals</li>
+          <li>Packaged to deploy into a client's own M365 tenant with environment variables, not rebuilds</li>
+          <li>Full small-business cloud build behind it: M365 tenant, authenticated outbound email (SPF/DKIM/DMARC), Bookings scheduling, marketing site on Cloudflare Pages with DNS and SSL</li>
+          <li>Initial setup complete; currently in staging ahead of production, not yet live with clients</li>
+        </ul>
+        <span class="repo">→ <a href="https://www.automatecomply.com">automatecomply.com</a></span>
+      </div>
+      <div class="diagram"><svg viewBox="0 0 440 200" role="img" aria-label="AutomateComply diagram">
+        <rect class="dg-box" x="10" y="20" width="150" height="46"/><text class="dg-txt" x="85" y="40" text-anchor="middle">Reusable templates</text><text class="dg-sub" x="85" y="56" text-anchor="middle">flows + Power Apps</text>
+        <line class="dg-arrow" x1="160" y1="43" x2="198" y2="43"/>
+        <rect class="dg-box dg-hot" x="200" y="20" width="150" height="46"/><text class="dg-txt" x="275" y="40" text-anchor="middle">Client M365 tenant</text><text class="dg-sub" x="275" y="56" text-anchor="middle">env vars, no rebuild</text>
+        <line class="dg-arrow" x1="275" y1="66" x2="275" y2="96"/>
+        <rect class="dg-box" x="120" y="98" width="230" height="44"/><text class="dg-txt" x="235" y="117" text-anchor="middle">Compliance workflows live</text><text class="dg-sub" x="235" y="133" text-anchor="middle">phishing · reviews · time-off · overtime</text>
+        <line class="dg-arrow" x1="235" y1="142" x2="235" y2="168"/>
+        <text class="dg-sub" x="235" y="184" text-anchor="middle">compliant without a large IT team</text>
+        <rect class="dg-box" x="10" y="150" width="96" height="40"/><text class="dg-sub" x="58" y="166" text-anchor="middle">M365 tenant ·</text><text class="dg-sub" x="58" y="182" text-anchor="middle">SPF/DKIM/DMARC</text>
+      </svg></div>
+    </div>
+
   </div>
 </section>
 
@@ -249,6 +275,7 @@
       <span class="chip">GPO</span><span class="chip">SharePoint</span><span class="chip">Docker</span>
       <span class="chip">RDS / RemoteApp</span><span class="chip">AD Certificate Services</span><span class="chip">PXE / WDS</span>
       <span class="chip">n8n</span><span class="chip">TCP/IP · DNS · DHCP · VPN</span><span class="chip">Duo MFA</span>
+      <span class="chip">Power Platform ALM</span><span class="chip">SPF · DKIM · DMARC</span><span class="chip">athenahealth MEL</span>
     </div>
   </div>
 </section>
@@ -257,7 +284,8 @@
   <div class="wrap">
     <h2>About</h2>
     <p>I'm the sole IT operation for a HIPAA-regulated healthcare organization in New Jersey - escalation support, identity, infrastructure, security, and everything between, across multiple locations. The through-line in my work: <strong>if a process gets done twice, it gets automated</strong> - and the automation gets documented, monitored, and made repeatable.</p>
-    <p>B.A. in Information Technology &amp; Informatics, Rutgers University. Rutgers Cybersecurity Boot Camp (300 hrs), Security Pro certified. <strong>Currently studying for the CCNA.</strong></p>
+    <p>I build and validate automation in partnership with AI tools, with every AI-drafted component verified before it reaches production. It is a force multiplier, not an autopilot.</p>
+    <p>B.A. in Information Technology &amp; Informatics, Rutgers University. TestOut Security Pro (certified, 2024). Rutgers Cybersecurity Bootcamp (2023). athenahealth EMR workflow scripting and customization (MEL). <strong>Currently studying for the CCNA.</strong></p>
     <p>Off hours I run the labs above on hardware I built myself, write n8n pipelines, and keep a Letterboxd watchlist longer than I will ever finish.</p>
   </div>
 </section>
