@@ -8,11 +8,12 @@
 <meta property="og:title" content="Michael Lawrence - IT Systems & Automation Engineer">
 <meta property="og:description" content="I run IT solo for a 100+ employee healthcare org - and I automate everything that gets done twice.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f766e'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EML%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237c3aed'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EML%3C/text%3E%3C/svg%3E">
 <style>
   :root{
-    --bg:#0b1120; --panel:#101a30; --panel2:#0d1526; --line:#1e2c4a;
-    --text:#e2e8f0; --muted:#8ea0bd; --accent:#2dd4bf; --accent2:#0f766e;
+    --bg:#ffffff; --panel:#faf8ff; --panel2:#f4effc; --line:#e6e1f0;
+    --text:#17121f; --muted:#5c5470; --accent:#7c3aed; --accent2:#7c3aed;
+    --accent-dark:#6d28d9;
     --max:1060px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -21,19 +22,20 @@
   a{color:var(--accent);text-decoration:none}
   a:hover{text-decoration:underline}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-  header.hero{padding:88px 0 56px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 500px at 70% -10%, rgba(45,212,191,.08), transparent)}
+  header.hero{padding:88px 0 56px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 520px at 72% -12%, rgba(124,58,237,.10), transparent)}
   .kicker{color:var(--accent);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
   h1{font-size:clamp(2rem,5vw,3.1rem);line-height:1.15;margin:.35em 0 .3em}
   .tag{color:var(--muted);font-size:1.12rem;max-width:640px}
   .links{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
-  .btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid var(--line);color:var(--text);font-weight:600;font-size:.95rem;transition:.15s}
-  .btn:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
-  .btn.primary{background:var(--accent2);border-color:var(--accent2);color:#fff}
+  .btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1px solid var(--line);color:var(--text);font-weight:600;font-size:.95rem;transition:.15s;background:#fff}
+  .btn:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+  .btn.primary{background:var(--accent2);border-color:var(--accent2);color:#fff;box-shadow:0 2px 10px rgba(124,58,237,.28)}
+  .btn.primary:hover{background:var(--accent-dark);border-color:var(--accent-dark);color:#fff}
   section{padding:64px 0;border-bottom:1px solid var(--line)}
   h2{font-size:1.6rem;margin-bottom:8px}
   .sub{color:var(--muted);margin-bottom:36px;max-width:640px}
   .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;border-top:3px solid var(--accent)}
   .stat b{display:block;font-size:1.9rem;color:var(--accent);line-height:1.2}
   .stat span{color:var(--muted);font-size:.92rem}
   .case{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px;margin-bottom:26px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
@@ -44,15 +46,15 @@
   .case ul{list-style:none;margin:0 0 14px}
   .case li{padding-left:22px;position:relative;margin-bottom:7px;font-size:.97rem}
   .case li::before{content:"▸";color:var(--accent);position:absolute;left:0}
-  .result{display:inline-block;background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.35);color:var(--accent);border-radius:999px;padding:4px 14px;font-size:.88rem;font-weight:600;margin-bottom:12px}
+  .result{display:inline-block;background:rgba(124,58,237,.10);border:1px solid rgba(124,58,237,.30);color:var(--accent-dark);border-radius:999px;padding:4px 14px;font-size:.88rem;font-weight:600;margin-bottom:12px}
   .repo{font-size:.9rem}
   .diagram{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px}
   .diagram svg{width:100%;height:auto;display:block}
-  .dg-box{fill:#132038;stroke:#2a3d63;rx:8}
-  .dg-hot{fill:#0f2e2b;stroke:#2dd4bf}
-  .dg-txt{fill:#dbe5f3;font:600 13px ui-sans-serif,system-ui,sans-serif}
-  .dg-sub{fill:#8ea0bd;font:11px ui-sans-serif,system-ui,sans-serif}
-  .dg-arrow{stroke:#3f588b;stroke-width:1.6;marker-end:url(#arr)}
+  .dg-box{fill:#ffffff;stroke:#d7cbf0;rx:8}
+  .dg-hot{fill:#ede4fc;stroke:#7c3aed}
+  .dg-txt{fill:#17121f;font:600 13px ui-sans-serif,system-ui,sans-serif}
+  .dg-sub{fill:#5c5470;font:11px ui-sans-serif,system-ui,sans-serif}
+  .dg-arrow{stroke:#a78bda;stroke-width:1.6;marker-end:url(#arr)}
   .stack{display:flex;flex-wrap:wrap;gap:10px}
   .chip{background:var(--panel);border:1px solid var(--line);padding:7px 15px;border-radius:999px;font-size:.9rem;color:var(--text)}
   .about p{max-width:680px;color:var(--muted);margin-bottom:14px}
@@ -113,7 +115,7 @@
         <span class="repo">→ <a href="https://github.com/michaellawrence-it/ad-onboarding-automation">ad-onboarding-automation</a> · <a href="https://github.com/michaellawrence-it/entra-dynamic-groups">entra-dynamic-groups</a></span>
       </div>
       <div class="diagram"><svg viewBox="0 0 440 200" role="img" aria-label="Provisioning flow diagram">
-        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3f588b"/></marker></defs>
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a78bda"/></marker></defs>
         <rect class="dg-box" x="10" y="20" width="130" height="52"/><text class="dg-txt" x="75" y="42" text-anchor="middle">HR intake</text><text class="dg-sub" x="75" y="60" text-anchor="middle">name · dept · role</text>
         <line class="dg-arrow" x1="140" y1="46" x2="180" y2="46"/>
         <rect class="dg-box dg-hot" x="182" y="20" width="130" height="52"/><text class="dg-txt" x="247" y="42" text-anchor="middle">New-Employee.ps1</text><text class="dg-sub" x="247" y="60" text-anchor="middle">account + attributes</text>
