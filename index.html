@@ -185,31 +185,6 @@
 
     <div class="case">
       <div>
-        <span class="result">Recovered from real disk failure</span>
-        <h3>Homelab: self-healing media infrastructure</h3>
-        <p class="prob">A multi-container Docker platform serving Plex and Jellyfin across 13 drives. Then Windows dynamic disks failed and drive letters reshuffled under the whole stack.</p>
-        <ul>
-          <li>Diagnosed it as a pointer problem, not data loss: the large majority of 200+ dead library entries recovered with zero data movement</li>
-          <li>Edited the Plex library DB directly when the API silently no-op'd; re-mounted and re-rooted every service</li>
-          <li>Health check every 30 min now auto-restarts stopped containers and watches drive mounts, space, and server reachability</li>
-          <li>Dedup tooling freed ~379 GB, with runtime-delta guards so alternate cuts never get deleted as "duplicates"</li>
-        </ul>
-        <span class="repo">→ <a href="https://github.com/michaellawrence-it/homelab-media-stack">homelab-media-stack</a> (incl. the full disaster-recovery write-up)</span>
-      </div>
-      <div class="diagram"><svg viewBox="0 0 440 210" role="img" aria-label="Media stack diagram">
-        <rect class="dg-box" x="10" y="10" width="150" height="42"/><text class="dg-txt" x="85" y="28" text-anchor="middle">Docker host</text><text class="dg-sub" x="85" y="44" text-anchor="middle">one concern per container</text>
-        <line class="dg-arrow" x1="85" y1="52" x2="85" y2="84"/>
-        <rect class="dg-box" x="10" y="86" width="150" height="46"/><text class="dg-txt" x="85" y="105" text-anchor="middle">Support services</text><text class="dg-sub" x="85" y="121" text-anchor="middle">stats · requests · live TV</text>
-        <line class="dg-arrow" x1="85" y1="132" x2="85" y2="160"/>
-        <rect class="dg-box" x="10" y="162" width="200" height="40"/><text class="dg-txt" x="110" y="180" text-anchor="middle">13 NTFS drives</text><text class="dg-sub" x="110" y="196" text-anchor="middle">per-drive mounts</text>
-        <rect class="dg-box" x="230" y="162" width="200" height="40"/><text class="dg-txt" x="330" y="180" text-anchor="middle">Plex · Jellyfin</text><text class="dg-sub" x="330" y="196" text-anchor="middle">tunnel-only remote access</text>
-        <line class="dg-arrow" x1="210" y1="182" x2="228" y2="182"/>
-        <rect class="dg-box dg-hot" x="230" y="10" width="200" height="122"/><text class="dg-txt" x="330" y="38" text-anchor="middle">Health check · 30 min</text><text class="dg-sub" x="330" y="62" text-anchor="middle">auto-restart stopped containers</text><text class="dg-sub" x="330" y="82" text-anchor="middle">per-drive space thresholds</text><text class="dg-sub" x="330" y="102" text-anchor="middle">server reachability</text><text class="dg-sub" x="330" y="122" text-anchor="middle">rolling log + state JSON</text>
-      </svg></div>
-    </div>
-
-    <div class="case">
-      <div>
         <span class="result">Security awareness, measured</span>
         <h3>In-house phishing simulation program</h3>
         <p class="prob">Awareness training needs evidence, and commercial phishing-sim platforms are overkill for a 100-person org.</p>
@@ -285,7 +260,7 @@
     <p>I'm the sole IT operation for a HIPAA-regulated healthcare organization in New Jersey - escalation support, identity, infrastructure, security, and everything between, across multiple locations. The through-line in my work: <strong>if a process gets done twice, it gets automated</strong> - and the automation gets documented, monitored, and made repeatable.</p>
     <p>I build and validate automation in partnership with AI tools, with every AI-drafted component verified before it reaches production. It is a force multiplier, not an autopilot.</p>
     <p>B.A. in Information Technology &amp; Informatics, Rutgers University. TestOut Security Pro (certified, 2024). Rutgers Cybersecurity Bootcamp (2023). athenahealth EMR workflow scripting and customization (MEL). <strong>Currently studying for the CCNA.</strong></p>
-    <p>Off hours I run the labs above on hardware I built myself, write n8n pipelines, and keep a Letterboxd watchlist longer than I will ever finish.</p>
+    <p>Off hours I run the lab above on hardware I built myself and write n8n pipelines.</p>
   </div>
 </section>
 
